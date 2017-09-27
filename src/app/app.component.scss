@@ -1,0 +1,45 @@
+@import '~styles/_variables.scss';
+.fullscreen {
+    background-color: $primary;
+    width: 100vw;
+    height: 100vh;
+    .main-section {
+        margin: 5rem;
+        .hidden {
+            display: none;
+        }
+        .subtitle {
+            color: $white;
+            font-size: 4rem;
+            font-weight: 100;
+            margin-bottom: 0;
+            margin-top: 0;
+            .light-blue {
+                color: $accent;
+            }
+        }
+        .tagline {
+            font-family: $secondary-font;
+            color: $white;
+            color: white;
+            font-weight: 100;
+            font-size: 1.5rem;
+            .secondary-link {
+                text-decoration: none;
+                border-bottom: 1px solid $accent;
+                padding-bottom: 0.3rem;
+                font-weight: 500;
+                margin-right: 0.4rem;
+                &:visited {
+                    color: $white;
+                }
+                &:hover {
+                    color: $accent;
+                }
+                &:active {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
