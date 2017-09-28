@@ -1,0 +1,12 @@
+@import '~assets/styles/config.scss';
+
+.box-footer{
+    background-color: $white;
+    bottom: -150px;
+    display:flex;
+    left: 2.5%;
+    min-height: 195px; 
+    position: absolute;
+    width: 95%;
+    z-index: 3;
+}

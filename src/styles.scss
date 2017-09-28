@@ -1,8 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
-@import '~styles/_variables.scss';
+@import '~assets/styles/config.scss';
 
-html, body {
+body{
+    color:$neutral;
+    font-family: $secondary-font;
+    font-weight: 300;
     margin: 0;
-    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
     font-family: $main-font;
+    font-size: 3.5em;
+    font-weight: 100;
+}
+
+@media(max-width: 768px){ 
+    h1{
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 480px){ 
+    h1{
+        font-size: 1.8em;
+    }
 }

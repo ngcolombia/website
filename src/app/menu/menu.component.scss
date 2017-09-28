@@ -1,0 +1,24 @@
+@import '~assets/styles/config.scss';
+
+nav{
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        li{
+            a{
+                color: $white;
+                font-size: 1.2em;
+                font-weight: 100;
+                text-decoration: none;
+                padding: 0 .6em;
+                &:hover{
+                    color: $accent;
+                }
+            }
+            .current{
+                color: $accent;
+            }
+        }
+    }
+}
