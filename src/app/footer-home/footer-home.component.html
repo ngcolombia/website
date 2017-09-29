@@ -1,36 +1,35 @@
+<div class="box-footer" [@showInfo]="infoState">
 
-<div class="box-footer">
-
-  <!-- <div>
-      Enterate de las últimas
-      noticias de nuestra comunidad
+  <div class="btn-arrow" (click)="toggleInfo()">
+    <img src="assets/img/icon-arrow.svg" alt="Up">
   </div>
 
-  <div>
-    <form>
-      <div>
-        <div>
-          <input type="text" placeholder="Email">
-        </div>
+  <div class="ctn-newsletter">
 
-        <div>
-          <button>Enviar</button>
-        </div>
-      </div>
-    </form>
+    <div class="text">
+      Enterate de las últimas noticias de nuestra comunidad
+    </div>
+
+    <div class="form">
+      <form>
+        
+        <input type="text" placeholder="Email">
+        <button class="primary-button">Enviar</button>
+
+      </form>
+    </div>
   </div>
 
-  <div>
+  <div class="ctn-networks">
+      <app-social-networks></app-social-networks>
+      <div class="hash">@AngularMedellín</div>
+  </div>
 
-    <div>
-      redes
-    </div>
-
-    <div>
-      sponsor
-    </div>
-
-  </div> -->
-
+  <div class="ctn-sponsor">
+    <span>sponsor</span>
+    <a href="http://yuxiglobal.com/" target="_bank">
+      <img src="assets/img/yuxiglobal.png" alt="Yuxi Global">
+    </a>
+  </div>
 
 </div>

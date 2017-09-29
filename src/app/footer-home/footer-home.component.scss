@@ -2,11 +2,104 @@
 
 .box-footer{
     background-color: $white;
-    bottom: -150px;
-    display:flex;
-    left: 2.5%;
-    min-height: 195px; 
+    bottom: -160px;
+    //bottom: 0;
+    @include flex;
+    justify-content:space-around;
+    height: 195px; 
     position: absolute;
-    width: 95%;
+    padding: 3em;
+    box-sizing: border-box;
+    width: 100%;
     z-index: 3;
+    .btn-arrow{
+        height: 47px;
+        width: 47px;
+        position: absolute;
+        left: 50%;
+        margin-left: -23px;
+        top: -23px;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+        &:hover{
+            @include transform(180deg);
+        }
+    }
+    .ctn-newsletter{
+        flex: 70%;
+        @include flex;
+        justify-content: space-around; 
+        .text{
+            align-self: center;
+            font-size: 1.3em;
+            max-width: 284px;
+        }
+        .form{
+            align-self: center;
+            form{
+                @include flex;
+                justify-content: space-around;
+                input{
+                    border: 0;
+                    border-bottom: 1px solid $light-neutral;
+                    padding: 0 .2em;
+                    font-size: 1.2em;
+                    font-family: $secondary-font;
+                    font-weight: 100;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+    .ctn-networks{
+        flex: 15%;
+        text-align: center;
+        align-self: center;
+        .hash{
+            font-size: .8em;
+            color: $neutral;
+            margin-top: .5em;
+        }
+    }
+    .ctn-sponsor{
+        @include flex;
+        flex: 15%;
+        a,
+        span{
+            align-self: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: $break-small){
+    .box-footer{
+        padding: 1.5em 1em;
+        flex-direction: column;
+        position: relative;
+        bottom: 26px !important;
+        height: 450px !important;
+        .ctn-newsletter{
+            flex-direction: column;
+            .text{
+                margin: 1em 0;
+                font-size: 1.5em;
+            }
+        }
+        .form{
+            form{
+                flex-direction: column;
+                margin-bottom: 1em;
+                input{
+                    margin-bottom: 1em;
+                }
+            }
+        }
+        .ctn-networks{
+            margin: 2em 0;
+        }
+        .ctn-sponsor{
+            justify-content: center;
+        }
+    }
 }

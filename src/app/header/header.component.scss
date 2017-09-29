@@ -1,6 +1,7 @@
+@import '~assets/styles/config.scss';
 
 header{
-    display: flex;
+    @include flex;
     padding: 1.5em 0;
 	justify-content:space-between;
 	align-items:center;
@@ -15,7 +16,7 @@ header{
     }
 }
 
-@media(max-width: 768px){ 
+@media(max-width: $break-small){ 
     header{
         .logo-header{
             width: 200px;

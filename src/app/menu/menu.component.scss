@@ -2,7 +2,7 @@
 
 nav{
     ul{
-        display: flex;
+        @include flex;
         list-style: none;
         justify-content: flex-end;
         li{

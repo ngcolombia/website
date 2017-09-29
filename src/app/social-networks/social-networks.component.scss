@@ -1,0 +1,20 @@
+@import '~assets/styles/config.scss';
+
+.networks{
+    margin: 0 auto;
+    text-align: center;
+    width: 126px; 
+    ul {
+        @include flex;
+        flex-direction: row;
+        list-style: none; 
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        li a{
+            display: block;
+            height: 32px;
+            width: 32px;
+        }
+    }
+}

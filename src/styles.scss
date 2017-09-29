@@ -1,10 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
 @import '~assets/styles/config.scss';
 
 body{
     color:$neutral;
     font-family: $secondary-font;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 100;
     margin: 0;
+    background-color: $gradientEnd;
+    background-image: url('~assets/img/pattern-back.png');
 }
 
 img{
@@ -17,7 +21,24 @@ h1{
     font-weight: 100;
 }
 
-@media(max-width: 768px){ 
+button{
+    border: 0;
+}
+
+.primary-button{
+    background-color: $light-accent;
+    color: $white;
+    font-family: $secondary-font;
+    font-size: 2em;
+    font-weight: 100;
+    padding: .2em 1em;
+    &:hover{
+        background-color: $accent;
+    }
+    cursor: pointer;
+}
+
+@media(max-width: $break-small){ 
     h1{
         font-size: 2em;
     }

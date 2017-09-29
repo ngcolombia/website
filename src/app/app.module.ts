@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterHomeComponent } from './footer-home/footer-home.component';
+import { SocialNetworksComponent } from './social-networks/social-networks.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,11 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
     HeaderComponent,
     MenuComponent,
     FooterHomeComponent,
+    SocialNetworksComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [HomeComponent]
