@@ -19,16 +19,10 @@ $break-medium: 768px;
 $break-large: 992px;
 $break-extra-large: 992px;
 
-@mixin flex {
-    display: -webkit-box; 
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex; 
-    display: flex;
+%flex {
+  display: flex;
 }
 
 @mixin transform($val){
-    -webkit-transform: rotate($val);
-    -ms-transform: rotate($val);
-    transform: rotate($val);
+  transform: rotate($val);
 }

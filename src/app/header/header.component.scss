@@ -1,7 +1,7 @@
-@import '~assets/styles/config.scss';
+@import '~assets/styles/helpers/_variables.scss';
 
 header{
-    @include flex;
+    @extend %flex;
     padding: 1.5em 0;
 	justify-content:space-between;
 	align-items:center;

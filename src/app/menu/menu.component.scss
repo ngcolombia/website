@@ -1,8 +1,8 @@
-@import '~assets/styles/config.scss';
+@import '~assets/styles/helpers/_variables.scss';
 
 nav{
     ul{
-        @include flex;
+        @extend %flex;
         list-style: none;
         justify-content: flex-end;
         li{
