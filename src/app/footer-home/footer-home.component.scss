@@ -1,10 +1,10 @@
-@import '~assets/styles/config.scss';
+@import '~assets/styles/helpers/variables.scss';
 
 .box-footer{
     background-color: $white;
     bottom: -160px;
     //bottom: 0;
-    @include flex;
+    @extend %flex;
     justify-content:space-around;
     height: 195px; 
     position: absolute;
@@ -27,7 +27,7 @@
     }
     .ctn-newsletter{
         flex: 70%;
-        @include flex;
+        @extend %flex;
         justify-content: space-around; 
         .text{
             align-self: center;
@@ -37,7 +37,7 @@
         .form{
             align-self: center;
             form{
-                @include flex;
+                @extend %flex;
                 justify-content: space-around;
                 input{
                     border: 0;
@@ -62,7 +62,7 @@
         }
     }
     .ctn-sponsor{
-        @include flex;
+        @extend %flex;
         flex: 15%;
         a,
         span{

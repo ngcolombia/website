@@ -1,11 +1,11 @@
-@import '~assets/styles/config.scss';
+@import '~assets/styles/helpers/variables.scss';
 
 .networks{
     margin: 0 auto;
     text-align: center;
     width: 126px; 
     ul {
-        @include flex;
+        @extend %flex;
         flex-direction: row;
         list-style: none; 
         justify-content: space-around;
