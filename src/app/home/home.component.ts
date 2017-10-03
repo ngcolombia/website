@@ -16,7 +16,7 @@ export class HomeComponent {
   showMedia = true;
 
   onFooterToogle(infoState: string) {
-    this.showMedia = infoState === 'hide' ? true : false;
+    this.showMedia = infoState === 'hide';
   }
 
 }
