@@ -27,7 +27,9 @@ export class FooterHomeComponent implements OnInit {
   infoState = 'hide';
 
   toggleInfo() {
-    this.infoState = (this.infoState === 'hide' ? 'show' : 'hide');
+    if(window.innerWidth > 767){
+      this.infoState = (this.infoState === 'hide' ? 'show' : 'hide');
+    }
   }
 
 }
