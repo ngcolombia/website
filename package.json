@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "ver": "node -v",
-    "build": "npm run ng-build & copyfiles CNAME docs"
+    "build": "npm run ng-build & copyfiles CNAME docs/",
+    "build-mac": "npm run ng-build & cp CNAME docs/"
   },
   "private": true,
   "dependencies": {

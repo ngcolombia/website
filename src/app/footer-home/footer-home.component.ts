@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 
 @Component({
@@ -19,16 +19,18 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 })
 export class FooterHomeComponent implements OnInit {
 
+  infoState = 'hide';
+  @Output() onToggle = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
-  infoState = 'hide';
-
   toggleInfo() {
     if(window.innerWidth > 767){
       this.infoState = (this.infoState === 'hide' ? 'show' : 'hide');
+      this.onToggle.emit(this.infoState);
     }
   }
 

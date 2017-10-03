@@ -42,7 +42,7 @@
             border-bottom: 1px solid $accent;
             display: inline-block;
             font-weight:500;
-            padding-bottom: .2em; 
+            padding-bottom: .2em;
             text-decoration: none;
             &:hover{
                 color:$accent;
@@ -62,9 +62,9 @@
     .ctn-networks{
         flex: 1 100%;
     }
-    .header, 
+    .header,
     .main{
-        flex: 2 100%; 
+        flex: 2 100%;
     }
     .ctn-networks{
         .hash{
@@ -81,7 +81,7 @@
         overflow: initial;
         position: static;
     }
-    
+
     .wrapper-content{
         left: 5%;
         width: 90%;
@@ -91,9 +91,14 @@
         }
     }
 
+    .main {
+      text-align: center;
+    }
     .content-home{
-        .header, 
-        .main,
+        .header,
+        .main{
+            flex: 1 100%;
+        }
         .ctn-networks{
             flex: 1 100%;
         }
