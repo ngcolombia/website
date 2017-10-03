@@ -1,12 +1,12 @@
 <div class="background-home">
 
-  <div class="wrapper-content">    
+  <div class="wrapper-content">
     <div class="content-home">
 
       <div class="header">
-          <app-header></app-header>  
+          <app-header></app-header>
       </div>
-      
+
       <div class="main">
         <h1>
           Más que un <span>meetup,</span> <br>
@@ -16,14 +16,14 @@
       </div>
 
       <div class="ctn-networks">
-          <app-social-networks></app-social-networks>
+          <app-social-networks *ngIf="showMedia" [@showMedia]></app-social-networks>
           <div class="hash">@AngularMedellín</div>
       </div>
-      
+
 
     </div>
 
-    <app-footer-home></app-footer-home>
+    <app-footer-home (onToggle)="onFooterToogle($event)"></app-footer-home>
   </div>
 
   <div class="back-patter"></div>
