@@ -76,7 +76,7 @@
     }
 }
 
-@media(max-width: $break-small){
+@media(max-width: $break-medium){
     .background-home{
         overflow: initial;
         position: static;
@@ -94,16 +94,13 @@
     .main {
       text-align: center;
     }
-}
-
-@media(max-height: 768px){
     .content-home{
         .header,
         .main{
             flex: 1 100%;
         }
         .ctn-networks{
-            flex: 2 100%;
+            flex: 1 100%;
         }
     }
 }
