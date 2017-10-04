@@ -30,16 +30,17 @@
         @extend %flex;
         justify-content: space-around; 
         .text{
+            flex: 40%;
             align-self: center;
             font-size: 1.3em;
-            max-width: 284px;
         }
         .form{
+            flex: 55%;
             align-self: center;
             form{
                 @extend %flex;
                 justify-content: space-around;
-                input{
+                input[type="email"]{
                     border: 0;
                     border-bottom: 1px solid $light-neutral;
                     padding: 0 .2em;
@@ -47,6 +48,10 @@
                     font-family: $secondary-font;
                     font-weight: 100;
                     align-self: flex-end;
+                    flex: 80%;
+                }
+                input[type="submit"]{
+                    flex: 20%;
                 }
             }
         }
@@ -72,7 +77,31 @@
     }
 }
 
-@media(max-width: $break-small){
+@media(max-width: $break-large){
+    .box-footer{
+        .ctn-newsletter{
+            flex-flow: column;
+            justify-content: space-between;
+            .text{
+                flex: 100%;
+                text-align: center;
+                font-size: 1.2em;
+            }
+            .form{
+                flex-flow: column;
+                width: 100%;
+                input[type="email"],
+                input[type="submit"]{
+                    flex: 100%;
+                }
+                
+            }
+        }    
+    }
+}
+
+
+@media(max-width: $break-medium){
     .box-footer{
         padding: 1.5em 1em;
         flex-direction: column;
@@ -83,15 +112,16 @@
             flex-direction: column;
             .text{
                 margin: 1em 0;
-                font-size: 1.5em;
             }
         }
         .form{
             form{
                 flex-direction: column;
                 margin-bottom: 1em;
-                input{
+                input[type="email"]{
                     margin-bottom: 1em;
+                    width: 100%;
+                    margin-right: auto;
                 }
             }
         }
