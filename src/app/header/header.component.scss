@@ -18,6 +18,7 @@ header{
 
 @media(max-width: $break-small){ 
     header{
+        justify-content: center;
         .logo-header{
             width: 200px;
         }

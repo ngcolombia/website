@@ -57,7 +57,7 @@
         }
     }
     .ctn-networks{
-        flex: 15%;
+        flex: 22%;
         text-align: center;
         align-self: center;
         .hash{
@@ -68,11 +68,10 @@
     }
     .ctn-sponsor{
         @extend %flex;
-        flex: 15%;
-        a,
-        span{
+        flex: 8%;
+        justify-content: center;
+        a{
             align-self: center;
-            justify-content: center;
         }
     }
 }
