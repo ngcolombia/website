@@ -5,6 +5,7 @@ nav{
         @extend %flex;
         list-style: none;
         justify-content: flex-end;
+        padding: 0;
         li{
             a{
                 color: $white;
@@ -18,6 +19,18 @@ nav{
             }
             .current{
                 color: $accent;
+            }
+        }
+    }
+}
+
+@media(max-width: $break-medium){
+    nav{
+        ul{
+            li{
+                a{
+                    font-size: 1em;
+                }
             }
         }
     }
