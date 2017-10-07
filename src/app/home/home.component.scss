@@ -56,15 +56,15 @@
     display: -ms-flexbox;
     flex-direction: column;
     flex-wrap:wrap;
-    flex-flow: column wrap;
+    flex-flow: column;
     height: 100%;
     justify-content:flex-start;
     .ctn-networks{
-        flex: 1 100%;
+        flex: 1;
     }
     .header,
     .main{
-        flex: 2 100%;
+        flex: 2;
     }
     .ctn-networks{
         .hash{
