@@ -29,7 +29,7 @@
     z-index: 2;
     h1{
         color: $white;
-        margin: 0;
+        margin-top: 280px;
         span{
             color: $accent;
         }
@@ -66,6 +66,9 @@
     .main{
         flex: 2 100%;
     }
+    .main{
+        min-height: 100%;
+    }
     .ctn-networks{
         .hash{
             font-size: .8em;
@@ -100,6 +103,14 @@
         }
         .ctn-networks{
             flex: 2 100%;
+        }
+    }
+}
+
+@media(max-width: $break-small){
+    .content-home{
+        .ctn-networks{
+            margin-top: 170px;
         }
     }
 }
