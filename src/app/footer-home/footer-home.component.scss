@@ -1,5 +1,9 @@
 @import '~assets/styles/helpers/_variables.scss';
 
+.box-footer-container{
+    min-height: 100%;
+}
+
 .box-footer{
     background-color: $white;
     bottom: -160px;
